@@ -1,22 +1,70 @@
 aid: emailio
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/emailio.png
 name: Emailio
-description: Emailio is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Emailio is a Y Combinator (Winter 2014) and Thiel Fellowship-backed startup building "email
+  built for wellness" — a consumer email client for iPhone, iPad, and Mac that centers user
+  wellbeing and mental health rather than traditional inbox-productivity metrics. Its pre-launch
+  landing page describes inbox management, email batching, mood tracking, one-click unsubscribe,
+  and Smart Rule Suggestions, with early access gated behind a waitlist. Founded by Martin
+  Stoyanov and Teo Teodosiev with a roughly five-person team, Emailio sits at the intersection of
+  the productivity and health & wellness categories. It was surfaced as a Y Combinator portfolio
+  company and added to the API Evangelist network as a stub for enrichment; as of this pass it
+  exposes a consumer product only — no public API, developer portal, documentation, or SDKs could
+  be found.
 url: https://raw.githubusercontent.com/api-evangelist/emailio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
+- thiel-fellowship
+x-yc-batch: W2014
+x-founders:
+- Martin Stoyanov
+- Teo Teodosiev
+x-status: no-public-api
 x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Email
+- Email Client
+- Productivity
+- Health and Wellness
+- Consumer
+- Y Combinator
+- Thiel Fellowship
 apis: []
+common:
+- type: DomainSecurity
+  url: security/emailio-domain-security.yml
+- type: Website
+  url: https://www.emailio.com
+  name: Emailio Website
+- type: SignUp
+  url: https://www.emailio.com
+  name: Request Access
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
